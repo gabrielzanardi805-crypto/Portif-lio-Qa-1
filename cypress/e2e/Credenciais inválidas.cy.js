@@ -10,11 +10,5 @@ describe('fluxo de autenticação', () => {
     // Passo 3: clicar no botão entrar
     cy.get('[data-testid="entrar"]').click()
    cy.get('.alert > :nth-child(2)').should('have.text', 'Email e/ou senha inválidos')
-
-    
-
-
-
-
   })
 })
