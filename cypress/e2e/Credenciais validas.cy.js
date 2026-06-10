@@ -6,6 +6,7 @@ describe('fluxo de autenticação', () => {
 cy.get('[data-testid="email"]').type('gabriel@portfolio.com.br')
 cy.get('[data-testid="senha"]').type('1234')
 cy.get('[data-testid="senha"]').should('have.value', '1234')
+// Passo 3: Clicar no botão de entrar
 cy.get('[data-testid="entrar"]').click()    
 cy.get('h1').should('have.text', 'Serverest Store')
   })
