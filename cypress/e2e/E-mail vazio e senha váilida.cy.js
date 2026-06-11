@@ -9,3 +9,4 @@ describe('Fluxo de autenticação', () => {
    cy.get('[data-testid="entrar"]').click()
 });
 })
+
